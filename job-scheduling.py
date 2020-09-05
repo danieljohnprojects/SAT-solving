@@ -23,7 +23,7 @@ from bin_search import binary_search
 # Our labelling of jobs starts at 0 and ends at 9 so we need to subtract one
 # from job numbers in the description
 StartTimes = z3.IntVector('S', 10)
-EndTimes = z3.IntVector('E', 10)
+EndTimes = z3.IntVector('E', 10) # Probably would have been nicer making this 11 long so the indexing agreed with the question.
 
 # Conditions for job lengths
 # • The running time of job i is i + 10, for i = 1, 2, . . . , 10.
